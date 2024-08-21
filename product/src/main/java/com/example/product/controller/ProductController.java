@@ -19,7 +19,7 @@ public class ProductController {
     public String  getName(@PathVariable ("name") String name){
         return "Hello " + name;
     }
-    @GetMapping("/hello/{showId}/{showName}")
+    @GetMapping("/hello/{showId}/{showName}");
     public String setShowId(@PathVariable("showId") int showId , @PathVariable("showName")  String showName){
         return "Hello your showId is this -> " + showId+ "and Your show Name" + showName;
     }
