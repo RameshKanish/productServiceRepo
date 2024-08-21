@@ -1,5 +1,7 @@
 package com.example.product.service;
 
-public class ProductService {
+import com.example.product.models.Product;
 
+public interface ProductService {
+    public Product getProductById (long id);
 }
