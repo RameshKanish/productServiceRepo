@@ -21,6 +21,6 @@ public class ProductController {
     }
     @GetMapping("/hello/{showId}/{showName}")
     public String setShowId(@PathVariable("showId") int showId , @PathVariable("showName")  String showName){
-        return "Hello your showId is this -> " + showId + "and Your show Name" + showName;
+        return "Hello your showId is this -> " + showId+ "and Your show Name" + showName;
     }
 }
