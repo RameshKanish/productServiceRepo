@@ -11,11 +11,6 @@ public class WhetherReportService implements WhetherService{
         String url = "http://api.weatherapi.com/v1/current.json?key=f594e967b13247d98b3121035242608&q=London";
         RestTemplate rest = new RestTemplate();
         WhetherReportDto whether = rest.getForObject(url , WhetherReportDto.class);
-
-    }
-    public Whether convertWhetherToDto(Whether whether){
-        Whether wh = new Whether();
-        wh.setCountry(wh.setCountry());
-
+        return null;
     }
 }
